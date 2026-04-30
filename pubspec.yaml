@@ -1,0 +1,34 @@
+name: atik_mobil_uygulama
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0 # Geniş bir aralık verdik, hata çıkmasın
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- KRİTİK VERSİYON AYARLARI ---
+  # Başlarında '^' işareti YOK. Sürümleri sabitledik.
+  # Bu sürümler Android SDK 33/34 ile sorunsuz çalışır.
+  camera: 0.10.5+5
+  image_picker: 1.0.4
+  path_provider: 2.1.1
+  flutter_vision: ^1.1.4
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets tanımları
+  assets:
+    - assets/yolo.tflite
+    - assets/labels.txt
