@@ -1,16 +1,31 @@
-# atik_mobil_uygulama
+# ♻️ Waste Detection Mobile App
 
-A new Flutter project.
+Bu proje, mobil cihazların kamerasını kullanarak gerçek zamanlı atık tespiti ve sınıflandırması yapan yapay zeka destekli bir Flutter uygulamasıdır. Arka planda eğitilmiş **YOLOv11m** modelinin TFLite (TensorFlow Lite) formatı kullanılarak cihaz üzerinde (on-device) hızlı ve yüksek doğruluklu nesne tespiti sağlanmaktadır.
 
-## Getting Started
+## 🚀 Özellikler (Features)
+* **Gerçek Zamanlı Tespit:** Kamera üzerinden canlı görüntü işleme ve anında sınıflandırma.
+* **On-Device AI:** İnternet bağlantısına gerek duymadan `yolo.tflite` modeli ile cihaz üzerinde çıkarım (inference) yapabilme.
+* **Çapraz Platform:** Flutter altyapısı sayesinde Android ve iOS desteği.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Kullanılan Teknolojiler (Tech Stack)
+* **Mobil Çerçeve (Framework):** Flutter, Dart
+* **Yapay Zeka Modeli:** YOLOv11m (TensorFlow Lite `.tflite` formatına dönüştürülmüş)
 
-A few resources to get you started if this is your first Flutter project:
+## ⚙️ Kurulum ve Çalıştırma (Getting Started)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Proje standart bir Flutter uygulaması olarak çalışmaktadır. Kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**1. Repoyu Klonlayın:**
+```bash
+git clone [https://github.com/tugayyalcin/Waste-Detection-Mobile.git](https://github.com/tugayyalcin/Waste-Detection-Mobile.git)
+cd Waste-Detection-Mobile
+```
+**2. Gerekli Paketleri Yükleyin::** 
+```bash
+flutter pub get
+```
+
+**3. Uygulamayı Çalıştırın:**
+```bash
+flutter run
+```
